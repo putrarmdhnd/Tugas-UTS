@@ -1,0 +1,346 @@
+* {
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+   
+}
+a:hover{
+    color: none;
+}
+
+.intro {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: white;
+
+    transition: 1s;
+}
+
+.intro-logo {
+    text-align: center;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    max-width: 100%;
+
+}
+
+.logo {
+    position: relative;
+    bottom: -20px;
+    left: 40px;
+
+    opacity: 0;
+
+    transform: translate(-50%, -50%);
+}
+
+.logo img {
+    position: relative;
+    bottom: -3px;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+
+    transition: ease-in-out 0.5s;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+    background-color: aliceblue;
+
+    border-radius: 0%;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    box-shadow: none;
+    border: 0;
+    outline: none;
+
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+.navbar-nav {
+    padding-left: 10px;
+
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+
+.nav-item-costume .nav-link {
+    color: white
+}
+
+.nav-item-costume .nav-link.active {
+    color: rgb(215 7 204)
+}
+
+.nav-item-costume .nav-link.active::after {
+    width: 100%;
+}
+
+.nav-item-costume .nav-link::after {
+    content: " ";
+    background-color: antiquewhite;
+
+    width: 0%;
+    height: 2px;
+
+    display: block;
+    border-radius: 2px;
+
+}
+
+.nav-item-costume a:hover {
+    color: rgb(215 7 204);
+}
+
+.page-welcome {
+    display: flex;
+    justify-content: center;
+}
+
+.font-home {
+    text-align: center;
+    color: aliceblue;
+
+    position: absolute;
+    bottom: 5%;
+
+    background-color:rgba(0, 0, 0, 0.365);
+}
+.font-home p{
+    font-style: italic;
+}
+
+.font-home h1::after {
+
+    position: relative;
+    left: 40%;
+    display: block;
+
+    content: " ";
+    background-color: #d707cc;
+
+    width: 15%;
+    height: 5px;
+
+    transition: ease-in 1s;
+
+}
+
+.about {
+    padding: 9% 8%;
+}
+
+.about-1 h1 {
+    color: rgb(215 7 204);
+}
+
+.about-1 p {
+    color: #ffffff8a;
+    padding-right: 13%;
+
+    margin-left: 5%;
+
+    font-weight: 500;
+}
+
+.about-1 h1,
+.about-2 p {
+    margin-left: 5%;
+}
+
+.about-1,
+.about-2 {
+    margin-top: 5%;
+}
+
+.content-location{
+    width: 75%;
+    height: 60vh;
+
+    border-radius: 80%;
+    margin-left: 25%;
+
+    border: solid;
+    border-color: black;
+
+    align-items: flex-end;
+
+}
+
+
+.head {
+    text-align: center;
+    color: white;
+
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+}
+
+.bg-bagan{
+    padding-top: 5%;
+}
+.bagan {
+    display: flex;
+}
+
+.bg-project{
+    padding: 10%  10%;
+
+    text-decoration: none;
+}
+
+.project-isi {
+    padding-right: 10px;
+    border: 3px
+}
+.img-project{
+    border: 2px solid;
+    color: black;
+}
+
+.project-dalam {
+    text-decoration-line: none;
+   
+}
+
+.judul-project {
+    position: relative;
+    bottom: 45%;
+    text-align: center;
+
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    z-index: 9;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    visibility: hidden;
+}
+
+.project-dalam::after {
+    content: "";
+    width: 93%;
+    height: 39vh;
+
+    position: absolute;
+    top: 0%;
+
+    background-color: rgba(0, 0, 0, 0.625);
+    display: block;
+
+    visibility: hidden;
+}
+
+.project-dalam:hover::after {
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.project-dalam:hover .judul-project {
+    visibility: visible;
+}
+
+
+
+.bg-music{
+    padding: 10%  10%;
+}
+.layout__music{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.layout__bg-music{
+    border-radius: 13px;
+}
+.content__img-music{
+    padding: 8% 8% 8% 8%;
+}
+audio{
+    width: 100%;
+}
+audio::-webkit-media-controls-enclosure{
+    background: none;
+    width: 100%;
+}
+
+.bg-contact-left,
+.bg-contact-right{
+
+    border-radius: 0.6944444444vw;
+    border: solid;
+}
+.bg-contact{
+    padding: 5% 10% 5% 10%;
+}
+.isi-video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6944444444vw;
+
+    display: block;
+}
+.contact-isi {
+    padding: 15px 10px 25px 10px;
+}
+
+.isi-contact {
+    padding: 8px 15px ;
+}
+
+.up {
+    font-weight: 600;
+}
+
+.down {
+    color: rgba(0, 0, 0, 0.525);
+    font-style: italic;
+}
+.font {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.icon{
+    float: right;
+}
+.icon a{
+    color: black;
+}
+
+button{
+    width: 100%;
+    height: 8vh;
+}
